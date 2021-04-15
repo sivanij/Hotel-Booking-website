@@ -1,35 +1,10 @@
 <html>
     <header>
        <title>List</title>
+       <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="./styles/list.css">
        <style>
-          .socialmedia_icon{
-             width:22px;
-             height: 20px;
-          }
-          .logo{
-             width:60px;
-             height:60px;
-          }
-          html,body{
-             height:100%;
-             width:100%;
-             margin:0px;
-             
-             background-color:#e0e0e0 ;
-          }
-          .listview_images{
-             width: 250px;
-             height:250px;
-            
-          }
-          .header,footer{
-             background-color: rosybrown;
-          }
-          .city_card{
-             margin: 2%;
-             background-color:  rgb(132,136,139);
-             width:40%
-          }
+          
        </style>
     </header>
     <body>
@@ -39,22 +14,24 @@
                   <img class = "logo"src = "assests/images/logo.png" alt = "logo" width = "150px" height = "200px" />
                </a>
             
-               <a href = "login.html" target="_blank">
-                  <span>Login</span>
-               </a>
+               <div class = "login_wrapper">
+                  <a href = "login.html">
+                     <span>Login</span>
+                  </a>
+               </div>  
              
             </div>
-            <div>
-               <ul>
+            <div class = "view_sections">
+               
                   <a href= "#listview">
-                     <li>List View</li>
+                    <b>List View</b> 
 
                   </a>
                   <a href= "#mapview">
-                     <li>Map view</li>
+                    <b>Map view</b> 
                   </a>
                                   
-               </ul>
+               
             </div>
             <div>
                <div id = "listview">
@@ -96,12 +73,12 @@
             </div>
             <footer>
                <div>
-                  <div>
-                      <a href="contact.html" target="_blank">
+                  <div class = "contact_wrapper">
+                      <a href="contact.html">
                          <span>Contact Us</span>
                       </a>
                   </div>
-                  <div>
+                  <div class="socialmedia_wrapper">
                       <a href = "https://www.facebook.com/" target="_blank">
                          <img class="socialmedia_icon" src="assests/images/facebook.png">
                       </a>
@@ -112,7 +89,7 @@
                          <img class="socialmedia_icon" src="assests/images/twitter.png">
                       </a>
                   </div>
-                  <div>
+                  <div class="text_wrapper" >
                     <span>Ⓒ 2020 ROOM SEARCH PVT LTD</span>
                   </div>
                 
