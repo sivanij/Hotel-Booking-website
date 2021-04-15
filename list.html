@@ -1,18 +1,42 @@
 <html>
-    <head>
+    <header>
        <title>List</title>
        <style>
           .socialmedia_icon{
              width:22px;
              height: 20px;
           }
+          .logo{
+             width:60px;
+             height:60px;
+          }
+          html,body{
+             height:100%;
+             width:100%;
+             margin:0px;
+             
+             background-color:#e0e0e0 ;
+          }
+          .listview_images{
+             width: 250px;
+             height:250px;
+            
+          }
+          .header,footer{
+             background-color: rosybrown;
+          }
+          .city_card{
+             margin: 2%;
+             background-color:  rgb(132,136,139);
+             width:40%
+          }
        </style>
-    </head>
+    </header>
     <body>
         <div>
-            <div>
+            <div class="header">
                <a href = "index.html">
-                  <img src = "assests/images/logo.png" alt = "logo" width = "150px" height = "200px" />
+                  <img class = "logo"src = "assests/images/logo.png" alt = "logo" width = "150px" height = "200px" />
                </a>
             
                <a href = "login.html" target="_blank">
@@ -22,71 +46,78 @@
             </div>
             <div>
                <ul>
-                  <a href= "list.html">
+                  <a href= "#listview">
                      <li>List View</li>
 
                   </a>
-                  <a href= "list.html">
+                  <a href= "#mapview">
                      <li>Map view</li>
                   </a>
                                   
                </ul>
             </div>
             <div>
-               <div>
-                  <a href = "detail.html">
-                     <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                     alt ="radisan">
-                     <h3>Radisson Blu Hotel</h3>
-                     <span>5 star</span>
-                     <p>New Delhi</p>
-                  </a>
-               </div>
-               <div>
-                  <a href = "detail.html">
-                     <img src = "https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
-                     alt ="Lalit">
-                     <h3>The Lalit New Delhi</h3>
-                     <span>4.5 star</span>
-                     <p>New Delhi</p>
-                  </a>
-               </div>
-               <div>
-                  <a href = "detail.html">
-                     <img src = "https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-                     alt ="radisan">
-                     <h3>Taj Palace</h3>
-                     <span>4 star</span>
-                     <p>New Delhi</p>
-                  </a>
+               <div id = "listview">
+                  <div class = "city_card">
+                     <a href = "detail.html">
+                        <img class ="listview_images" src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                        alt ="radisan">
+                        <h3>Radisson Blu Hotel</h3>
+                        <span>5 star</span>
+                        <p>New Delhi</p>
+                     </a>
+                  </div>
+                  <div class = "city_card">
+                     <a href = "detail.html">
+                        <img  class ="listview_images" src = "https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
+                        alt ="Lalit">
+                        <h3>The Lalit New Delhi</h3>
+                        <span>4.5 star</span>
+                        <p>New Delhi</p>
+                     </a>
+                  </div>
+                  <div class = "city_card">
+                     <a href = "detail.html">
+                        <img class ="listview_images" src = "https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
+                        alt ="radisan">
+                        <h3>Taj Palace</h3>
+                        <span>4 star</span>
+                        <p>New Delhi</p>
+                     </a>
+                  </div>
+               
               </div>
-              <div>
-                 <img src = "https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
-                 <p>Map View</p>
+              
+              <div id = "mapview">
+                   <img src = "https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
+                   <p>Map View</p>
               </div>
+              
             </div>
-            <div>
+            <footer>
                <div>
-                   <a href="contact.html" target="_blank">
-                      <span>Contact Us</span>
-                   </a>
+                  <div>
+                      <a href="contact.html" target="_blank">
+                         <span>Contact Us</span>
+                      </a>
+                  </div>
+                  <div>
+                      <a href = "https://www.facebook.com/" target="_blank">
+                         <img class="socialmedia_icon" src="assests/images/facebook.png">
+                      </a>
+                      <a href = "https://www.instagram.com/" target="_blank">
+                         <img class="socialmedia_icon" src="assests/images/instagram.png">
+                      </a>
+                      <a href = "https://www.twitter.com/" target="_blank">
+                         <img class="socialmedia_icon" src="assests/images/twitter.png">
+                      </a>
+                  </div>
+                  <div>
+                    <span>Ⓒ 2020 ROOM SEARCH PVT LTD</span>
+                  </div>
+                
                </div>
-               <div>
-                   <a href = "https://www.facebook.com/" target="_blank">
-                      <img class="socialmedia_icon" src="assests/images/facebook.png">
-                   </a>
-                   <a href = "https://www.instagram.com/" target="_blank">
-                      <img class="socialmedia_icon" src="assests/images/instagram.png">
-                   </a>
-                   <a href = "https://www.twitter.com/" target="_blank">
-                      <img class="socialmedia_icon" src="assests/images/twitter.png">
-                   </a>
-               </div>
-               <div>
-                 <span>Ⓒ 2020 ROOM SEARCH PVT LTD</span>
-               </div>
-             
-          </div>
+            </footer>
         </div>
     </body>
 </html>
