@@ -2,6 +2,9 @@
     width:22px;
     height: 20px;
  }
+ h5{
+    font-family: cursive;
+ }
  .logo{
      width:60px;
      height:60px;
@@ -14,37 +17,64 @@
   }
   .hotel_images{
      width:500px;
-     height:500px;
+     /* height:250px; */
   }
   
   .container{
      
-    margin-top: 7%;
-     margin-left: 4%;
-     margin-right: 4%;
+    /* margin-top: 7%;
+     margin-left: 2%;
+     margin-right: 4%; */
+     flex: 1;
+     text-align: center;
+     padding: 15px;
   }
   .details_container{
-     margin-left: 4%;
-     margin-right: 4%;
-     margin-bottom: 1%;
+     /* margin-left: 2%;
+     margin-right: 8%;
+     margin-bottom: 1%; */
+     padding: 15px;
+     flex: 0.5;
+     /* text-align: center; */
+     border-left:1px solid black;
+  }
+  .form-item {
+     padding: 5px 5px 20px 5px;
+     text-align: left;
+  }
+  .form-item label, .form-item input {
+     display: inline-block;
+  }
+  .form-item label {
+     min-width: 100px;
   }
   .searchBar_wrapper{
    display: flex;
    justify-content: center;
 }
+.login_wrapper{
+   float: right;
+   margin-top: 20px;
+   margin-right: 1%;
+}
+
 .text_wrapper{
   text-align: center;
+  margin-bottom: 2%;
   
 }
 .socialmedia_wrapper{
    float: right;
    margin-top: -8px;
+   margin-right: 2%;
   
 }
 .contact_wrapper{
    padding-top: 5px;
    width:80px;
-}.header{ 
+   margin-left: 2%;
+}
+.header{ 
    background-color: rosybrown;
    position: fixed;
    top: 0px;
@@ -61,14 +91,19 @@
     /* position: absolute; */
     width: 100%;
  }
-  .login_wrapper{
-   float: right;
-   margin-top: 20px;
-}
+ 
 a{
    text-decoration: none;
    color: black;
 }
 .description_text{
    padding-bottom: 60px;
+}
+.flex_container{
+   display: flex;
+   width:90%;
+   margin: 0 auto;
+   border: 1px solid black;
+   margin-top:120px;
+
 }

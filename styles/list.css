@@ -20,27 +20,38 @@
  }
  .city_card{
     margin: 4%;
-    background-color:  rgb(132,136,139);
+    background-color:lightgray;
     width:40%;
     display: inline-block;
+   
+ }
+ .city_card_last{
+   margin: 4% 4% 6% 4%;
+   background-color:lightgray;
+   width:40%;
+   display: inline-block;
  }
  .login_wrapper{
    float: right;
    margin-top: 20px;
+   margin-right: 1%;
 }
 
 .text_wrapper{
- text-align: center;
- 
+  text-align: center;
+  margin-bottom: 2%;
+  
 }
 .socialmedia_wrapper{
-  float: right;
-  margin-top: -8px;
- 
+   float: right;
+   margin-top: -8px;
+   margin-right: 2%;
+  
 }
 .contact_wrapper{
-  padding-top: 5px;
-  width:80px;
+   padding-top: 5px;
+   width:80px;
+   margin-left: 2%;
 }
 .header{ 
    background-color: rosybrown;
@@ -73,5 +84,21 @@
  }
 #mapview{
    display: none;
+}
+.image_content_wrapper{
+   width:100%;
+   margin: 0px;
+}
+.content-wrapper{
+   display: inline-block;
+   vertical-align: middle;
+   width:40%;
+   padding-left: 50px;
+}
+.image_wrapper{
+   display: inline-block;
+   vertical-align: middle;
+   width:40%;
+
 }
  
