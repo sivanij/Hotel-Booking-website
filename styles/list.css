@@ -25,6 +25,9 @@
     display: inline-block;
    
  }
+ .city_card:hover{
+    background-color: rosybrown;
+ }
  .city_card_last{
    margin: 4% 4% 6% 4%;
    background-color:lightgray;
@@ -78,13 +81,20 @@
     padding-top: 70px;
     text-align: center;
     text-decoration-style: none;
+ } 
+ /* .view_sections .active {
+    background-color: blue;
  }
+ .viewcontainer {
+    display: none;
+ }
+ .viewcontainer.active {
+    display: block;
+ } */
  b{
     padding-right: 20px;
  }
-#mapview{
-   display: none;
-}
+
 .image_content_wrapper{
    width:100%;
    margin: 0px;
@@ -100,5 +110,13 @@
    vertical-align: middle;
    width:40%;
 
+}
+.contactus{
+   background-color: teal;
+   width: 120px;
+}
+.login_button{
+   background-color: white;
+   color: black;
 }
  

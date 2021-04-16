@@ -113,7 +113,7 @@
 }
 .contact_wrapper{
    padding-top: 5px;
-   width:80px;
+   width:110px;
    margin-left: 2%;
 }
 .searchBar_wrapper{
@@ -130,4 +130,14 @@ span{
 .viewmore_wrapper{
    text-align: center;
    padding-bottom: 60px;
+}
+.viewmore{
+   margin-bottom:4%;
+}
+.contactus{
+   background-color: teal;
+}
+.login_button{
+   background-color: white;
+   color: black;
 }

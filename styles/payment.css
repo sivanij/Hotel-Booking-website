@@ -115,3 +115,15 @@ a{
    margin: 2%;
    border-radius: 10px;
 }
+.contactus{
+   background-color: teal;
+   width: 120px;
+}
+.login_button{
+   background-color: white;
+   color: black;
+}
+.paynow_button{
+
+   background-color: green;
+}
