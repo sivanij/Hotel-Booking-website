@@ -7,6 +7,7 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
        <link rel="stylesheet" href="./styles/detail.css">
+       <script src = "./scripts/detail.js"></script>
     </header>
     <body>
         <div>
@@ -15,9 +16,9 @@
                    <img  class = "logo" src = "assests/images/logo.png" alt = "logo" width = "150px" height = "200px" />
                </a>
                <div class = "login_wrapper">
-                  <a href = "login.html">
-                     <span>Login</span>
-                  </a>
+                  <button type="button" id = "login" class="btn btn-primary login_button" data-toggle="modal" data-target="#loginContainer">
+                     Login
+                   </button>
                </div>  
             </div>
             <div>
@@ -52,23 +53,23 @@
                         <form action="payment.html" method = "GET">
                            <div class="form-item">
                               <label>Adults:</label>
-                              <input type = "number" min = '1' required name = "Adults">
+                              <input type = "number" id = "Adults"  onkeyup="pricecal()"  min = '1' required name = "Adults">
                            </div>
                            <div class="form-item">
                               <label>Name:</label>
-                              <input type = "text" required name= "name">
+                              <input type = "text"  id = "name"required  onchange="pricecal()" name= "name">
                            </div>
                            <div class="form-item">
                               <label>From Date:</label>
-                              <input type = "date" required name="fromDate">
+                              <input type = "date" id = "fromDate"  onchange="pricecal()" required name="fromDate">
                            </div>
                            <div class="form-item">
                                  <label>To Date:</label>
-                                 <input type = "date" required name ="ToDate" >
+                                 <input type = "date" id = "toDate" onchange="pricecal()" required name ="ToDate" >
                            </div>
                            <div class="form-item">
                               <label>Total:</label>
-                              <input type = "number" disabled required name="total">
+                              <input type = "text"  id = "total" onchange="pricecal()" disabled required name="total">
                            </div>
                            <div class="btn btn-md btn-hover btn-success">
                               <button type="submit">Book Now</button>
@@ -129,7 +130,7 @@
                </div>
             </footer>
         </div>
-        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal fade" id="loginContainer" tabindex="-1" role="dialog" aria-labelledby="loginContainer" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
            <div class="modal-content">
              <div class="modal-header">
@@ -143,17 +144,17 @@
                   <form action="index.html" class = "main_container">
                       <div>
                           <label>Username:</label>
-                          <input type = "text" name="userName" placeholder="Enter Username" required>
+                          <input type = "text" id = "userName"name="userName" placeholder="Enter Username" required>
                       </div>
                       <div>
                           <label>Password:</label>
-                          <input type = "password" name="password" placeholder="Enter Password " required>
+                          <input type = "password" id = "password" name="password" placeholder="Enter Password " required>
                       </div>
               </div>
              </div>
              <div class="modal-footer">
                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-               <button type="submit" class="btn btn-primary">Login</button>
+               <button type="submit" onclick="login()" class="btn btn-primary">Login</button>
              </div>
             </form>
            </div>

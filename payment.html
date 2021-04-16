@@ -7,6 +7,7 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
        <link rel="stylesheet" href="./styles/payment.css">
+       <script src="./scripts/index.js" defer></script>
        
     </header>
     <body>
@@ -16,10 +17,10 @@
                <img  class = "logo" src = "assests/images/logo.png" alt = "logo" width = "150px" height = "200px" />
             </a>
             <div class = "login_wrapper">
-               <a href = "login.html">
-                  <span>Login</span>
-               </a>
-            </div>  
+               <button type="button" id = "login" class="btn btn-primary login_button" data-toggle="modal" data-target="#loginContainer">
+                  Login
+                </button>
+            </div>   
          </div>
             <div>
                <div class = "hotels_card">
@@ -69,7 +70,7 @@
                         <!-- <a href= "payment.html">
                            <p>Pay Now</p>
                         </a> -->
-                        <button class = "paynow_button">Pay Now</button>
+                        <button id="paynow_button" class = "paynow_button">Pay Now</button>
                      </div>
                </div>
             </div>
@@ -98,7 +99,7 @@
                </div>
             </footer>
         </div>
-        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal fade" id="loginContainer" tabindex="-1" role="dialog" aria-labelledby="loginContainer" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
            <div class="modal-content">
              <div class="modal-header">
@@ -112,17 +113,17 @@
                   <form action="index.html" class = "main_container">
                       <div>
                           <label>Username:</label>
-                          <input type = "text" name="userName" placeholder="Enter Username" required>
+                          <input type = "text" id = "userName"name="userName" placeholder="Enter Username" required>
                       </div>
                       <div>
                           <label>Password:</label>
-                          <input type = "password" name="password" placeholder="Enter Password " required>
+                          <input type = "password" id = "password" name="password" placeholder="Enter Password " required>
                       </div>
               </div>
              </div>
              <div class="modal-footer">
                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-               <button type="submit" class="btn btn-primary">Login</button>
+               <button type="submit" onclick="login()" class="btn btn-primary">Login</button>
              </div>
             </form>
            </div>

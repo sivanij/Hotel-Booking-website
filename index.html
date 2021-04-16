@@ -10,13 +10,14 @@
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
        <link rel="stylesheet" href="./styles/index.css">
+       <script defer src = "./scripts/index.js"></script>
     </header>
     <body>
         <div class="main_container">
             <div class="header">
                <img  class ="logo" src = "assests/images/logo.png" alt = "logo" width = "150px" height = "200px" />
                <div class = "login_wrapper">
-                  <button type="button" class="btn btn-primary login_button" data-toggle="modal" data-target="#login">
+                  <button type="button" id = "login" class="btn btn-primary login_button" data-toggle="modal" data-target="#loginContainer">
                      Login
                    </button>
                </div>   
@@ -52,7 +53,7 @@
                         <p>calcutta</p>
                      </li>
                   </ul>
-                  <ul>
+                  <ul id = "morecities" class="morecities">
                      <li class = "li">
                         <img class = "delhi" src = "https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg" 
                              alt="delhi_city_logo">
@@ -75,8 +76,8 @@
                   </ul>
                </div>
                <div class = "viewmore_wrapper">
-                  <a href = "index.html">
-                     <button type="button" class="btn btn-secondary viewmore">view more</button>
+                  <a href = "#morecities">
+                     <button type="button" class="btn btn-secondary viewmore" onclick="viewMore()">view more</button>
                   </a>
                   
                </div>
@@ -107,7 +108,7 @@
                </div>
             </footer>
         </div>
-        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal fade" id="loginContainer" tabindex="-1" role="dialog" aria-labelledby="loginContainer" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
            <div class="modal-content">
              <div class="modal-header">
@@ -121,17 +122,17 @@
                   <form action="index.html" class = "main_container">
                       <div>
                           <label>Username:</label>
-                          <input type = "text" name="userName" placeholder="Enter Username" required>
+                          <input type = "text" id = "userName"name="userName" placeholder="Enter Username" required>
                       </div>
                       <div>
                           <label>Password:</label>
-                          <input type = "password" name="password" placeholder="Enter Password " required>
+                          <input type = "password" id = "password" name="password" placeholder="Enter Password " required>
                       </div>
               </div>
              </div>
              <div class="modal-footer">
                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-               <button type="submit" class="btn btn-primary">Login</button>
+               <button type="submit" onclick="login()" class="btn btn-primary">Login</button>
              </div>
             </form>
            </div>

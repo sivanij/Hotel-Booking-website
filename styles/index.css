@@ -141,3 +141,9 @@ span{
    background-color: white;
    color: black;
 }
+.morecities {
+   display: none;
+}
+.morecities.active {
+   display: flex;
+}
